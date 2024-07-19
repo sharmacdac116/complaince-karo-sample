@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Complaince Karo</title>
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Outfit">
+<link rel="stylesheet" href="css/home.css"/>
+<link rel="stylesheet" href="css/common.css"/>
+</head>
+<body>
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"> <img class="bi me-2" width="40" height="32" src="images/logomarkblack.png"/> <span class="fs-4">Complaince Karo</span> </a>
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#" class="nav-link" aria-current="page">home</a></li>
+      <li class="nav-item"><a href="./about.html" class="nav-link">about</a></li>
+      <li class="nav-item"><a href="./service.html" class="nav-link">service</a></li>
+      <li id="contact-id" class="nav-item"><a href="#" onClick="openForm()" class="nav-link">contact</a></li>
+      <li class="nav-item"><a href="#" class="nav-link active">Book free consultation</a></li>
+    </ul>
+  </header>
+  <br/>
+  <h1 class="align-content-center h1-bolder">Empowering Compliance, Fueling Growth:</h1>
+  <h1 class="align-content-center h1-light">Transforming finacial and business aspiration into<br/>
+    reality with top-tier audit, tax and advisory service</h1>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <h1 >we <span id="home-adding-text" class="animated-text-color"></span><span id="blink">|</span></h1>
+  <br/>
+  <br/>
+  <div id="carouselChartControls" class="carousel slide">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-4">
+                <h1 class="align-content-center h1-bolder-size animated-text-color">500+</h1>
+                <br/>
+                <h1 class="h1-bolder">ITR Filing</h1>
+                <h1 class="h1-light">of individual, trusts,<br/>
+                  corporate, firm, NRI's</h1>
+              </div>
+              <div class="col-sm-8">
+                <canvas id="itr_chart" style="width:100%;"></canvas>
+                <div class="btn-group" style="width: 100%" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(90,'itr_chart')">90 DAYS</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(180,'itr_chart')">6 MONTH</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(365,'itr_chart')">1 YEAR</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(366,'itr_chart')">ALL TIME</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-4">
+                <h1 class="align-content-center h1-bolder-size animated-text-color">200+</h1>
+                <br/>
+                <h1 class="h1-bolder">Audits</h1>
+                <h1 class="h1-light">Incl. Stocks,<br/>
+                  Internal, Tax, GST<br>
+                  audits</h1>
+              </div>
+              <div class="col-sm-8">
+                <canvas id="audit_chart" style="width:100%;"></canvas>
+                <div class="btn-group" style="width: 100%" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(90,'audit_chart')">90 DAYS</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(180,'audit_chart')">6 MONTH</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(365,'audit_chart')">1 YEAR</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(366,'audit_chart')">ALL TIME</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-4">
+                <h1 class="align-content-center h1-bolder-size animated-text-color">100+</h1>
+                <br/>
+                <h1 class="h1-bolder">Startup<br/>
+                  Counseling and<br/>
+                  Fund Raising</h1>
+              </div>
+              <div class="col-sm-8">
+                <canvas id="startup_chart" style="width:100%;"></canvas>
+                <div class="btn-group" style="width: 100%" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(90,'startup_chart')">90 DAYS</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(180,'startup_chart')">6 MONTH</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(365,'startup_chart')">1 YEAR</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(366,'startup_chart')">ALL TIME</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-4">
+                <h1 class="align-content-center h1-bolder-size animated-text-color">500+</h1>
+                <br/>
+                <h1 class="h1-bolder">Registration</h1>
+                <h1 class="h1-light">Incl. GST, Firm,<br/>
+                  Company Trust, Shops,<br>
+                  MSME registrations</h1>
+              </div>
+              <div class="col-sm-8">
+                <canvas id="registration_chart" style="width:100%;"></canvas>
+                <div class="btn-group" style="width: 100%" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(90,'registration_chart')">90 DAYS</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(180,'registration_chart')">6 MONTH</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(365,'registration_chart')">1 YEAR</button>
+                  <button type="button" class="btn btn-outline-info chart-btn" onclick="createNewChart(366,'registration_chart')">ALL TIME</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselChartControls" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselChartControls" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col">
+      <div class="card" >
+        <div class="card-image"><img src="./images/image 1.svg" class="card-img-top" style="width: 100px; height: 100px;" ></div>
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Corporate Registration</h5>
+          <p class="card-text fw-light">We offers comperhensive service for corporate registration, ensuring a seamless process for establishing various types of business entities. From Private Limited Company to Trusts and Sole Proprietorship, we handle all legal and regulatory requirements, making it easy for clients to set up their business efficiently and compliantly</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-image"><img src="./images/image 2.svg" class="card-img-top" style="width: 100px; height: 100px;" ></div>
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Startup Specialization</h5>
+          <p class="card-text fw-light"> we specialize in providing a comprehensive suite of consultancy services specifically tailored for startups. Our goal is to support new businesses from their initial idea through to growth and expansion. We provide expert guidance on startup registration, financial projections, funding acquisition (including seed funding and government grants), tax planning, GST consultancy, payroll management, HR consultancy, and more.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-image"><img src="./images/image 3.svg" class="card-img-top" style="width: 100px; height: 100px;" ></div>
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Consultancy Services</h5>
+          <p class="card-text"> Compliance Karo delivers a wide range of consultancy services aimed at enhancing business operations and strategies. Our offerings include financial modeling, project reporting, internal financial control , strategic planning, and financial advisory and many more. We tailor our services to meet the specific needs of each client, ensuring they receive the best possible advice and support.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-image"><img src="./images/image 4.svg" class="card-img-top" style="width: 100px; height: 100px;" ></div>
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Statutory Compliance &amp; Filing</h5>
+          <p class="card-text fw-light"> We provide comprehensive statutory compliance and filing services to help businesses adhere to all legal requirements. Our services cover income tax filings, GST compliance, corporate law compliance, and other regulatory filings. By ensuring timely and accurate filings, we help our clients avoid legal penalties and maintain smooth business operations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col">
+      <h1>Achieve your financial and business <br>
+        ambitions with our leading audit, tax,<br>
+        and advisory services.</h1>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col">
+      <div class="card-rounded">
+        <h5> Partnering with forward-thinking businesses, we<br>
+          leverage expertise and innovation to achieve<br>
+          excellence without compromising efficiency. </h5>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card-rounded">
+        <h5> Integrity and professionalism drive sustainable<br>
+          success. We excel in both. </h5>
+      </div>
+    </div>
+  </div>
+  <div class="overlap-wrap">
+    <div id="id_explode_1" class="explode dot_1"></div>
+    <div id="id_explode_2" class="explode dot_2"></div>
+    <div id="id_explode_3" class="explode dot_3"></div>
+    <div id="id_explode_4" class="explode dot_4"></div>
+    <div id="id_explode_5" class="explode dot_5"></div>
+    <div id="id_explode_6" class="explode dot_6"></div>
+    <div id="id_explode_7" class="explode dot_7"></div>
+    <div id="id_explode_8" class="explode dot_8"></div>
+    <div id="id_explode_9" class="explode dot_9"></div>
+    <div id="id_explode_10" class="explode dot_10"></div>
+    <div id="id_client_centric" class="explode">
+      <p>Client-Centric Approach.</p>
+    </div>
+    <div id="id_innovation" class="explode">
+      <p>Innovation at the Core.</p>
+    </div>
+    <div id="id_expertise" class="explode">
+      <p>Expertise You Can Trust.</p>
+    </div>
+    <div id="id_tailored" class="explode">
+      <p>Tailored Solutions.</p>
+    </div>
+    <div id="id_comprehensive" class="explode">
+      <p>Comprehensive Services</p>
+    </div>
+    <div id="id_main_eclipse" class="explode">
+      <p>Empower Your Business:<br>
+        comprehensive services to<br>
+        streamline compliance and <br>
+        financial management.</p>
+    </div>
+  </div>
+  <div class="row" align="center">
+    <p class="bold_1">Empower Your Business<br>
+    </p>
+  </div>
+  <div class="row" align="center">
+    <p class="detail_1">Compliance Karo's comprehensive services streamline compliance and financial management, allowing your team to focus on strategic, high-value activities that drive growth and success.<br>
+      <br>
+    </p>
+  </div>
+  <div align="center">
+    <div class="black-background-card">
+      <div class="row" align="center">
+        <p><br>
+        </p>
+        <div>
+          <div id="change_background" class="bold_2">Compliance Karo</div>
+        </div>
+        <p><br>
+        </p>
+      </div>
+      <div class="row" align="center">
+        <h1 class="bold_3">Unlock Your Business Potential</h1>
+      </div>
+      <div class="row" align="center">
+        <p class="para_code_1"><br>
+          Compliance Karo is
+          <h></h>
+          ere to streamline your compliance, optimize your financial strategies, and drive your success. Our team of experts is dedicated to providing tailored solutions that meet your unique needs.<br>
+          <br>
+        </p>
+      </div>
+      <div class="row" align="center">
+        <div class="col" align="right">
+          <p class="button_class">book free consultation</p>
+        </div>
+        <div class="col-1">
+          <p class="para_code_2"> or </p>
+        </div>
+        <div class="col" align="left">
+          <p class="button_class" >get in touch with us</p>
+          <p><br>
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="row  py-2 my-3 border-top">
+    <div class="col-4"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"> <img class="bi me-2" width="40" height="28" src="images/logomarkblack.png"/>
+      <h6>Compliance Karo</h6>
+      </a>
+      <p class="footer-ck">compliance karo &copy; 2024  All Rights Reserved</p>
+    </div>
+    <div class="col-4"> </div>
+    <div class="col-1"> <a href="#" class="nav-link p-0 text-muted">home</a> </div>
+    <div class="col-1"> <a href="./about.html" class="nav-link p-0 text-muted">about</a> </div>
+    <div class="col-1"> <a href="./service.html" class="nav-link p-0 text-muted">services</a> </div>
+    <div class="col-1"> <a href="#" id="footer_contact_id" class="nav-link p-0 text-muted" onClick="openForm()">contact</a> </div>
+  </footer>
+  <div class="form-popup" id="join_us_id">
+    <div class="row">
+      <div class="col-11">
+        <h1 class="form_header">Get Started</h1>
+      </div>
+      <div class="col-1"><span class="btn-close" onClick="closeForm()"></span></div>
+    </div>
+    <div class="row">
+      <p>contact us or fill a form below, and we'll get back to you.<br>
+        within 24 hours.</p>
+    </div>
+    <div class="row">
+      <div class="col-4 form_mobil_no">
+        <p>+91-9504541435 <br/>
+          +91-6377056812</p>
+      </div>
+      <div class="col-4 form_email_address">
+        <p>raj@compliancekaro.net <br/>
+          devesh@compliancekaro.net</p>
+      </div>
+      <div class="col-2"></div>
+      <div class="col-2 form_watsapp"> <a href="https://api.whatsapp.com/send?phone=916377056812">whatsApp</a> </div>
+    </div>
+    <form id="contact-form-id">
+      <div id="form-group-id" class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <p class="form_labels">First name<br/>
+            </p>
+            <input type="text" class="form-control" id="first-name" placeholder="Jane">
+          </div>
+          <div class="col-6">
+            <p class="form_labels">Last name<br/>
+            </p>
+            <input type="text" class="form-control" id="last-name" placeholder="Smitherton">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="form_labels">Email<br/>
+            </p>
+            <input type="email" class="form-control" id="email" placeholder="xyz@xyz.in">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="form_labels">Phone Number<br/>
+            </p>
+            <input type="text" class="form-control" id="phone" placeholder="+91 00000-00000">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="form_labels">Message<br/>
+            </p>
+            <textarea id="message" class="form-control" rows="5" placeholder="type your message text here"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <p><br/>
+            </p>
+            <button type="submit" class="btn mb-2 submit_button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+<script src="js/home.js"></script>
+</body>
+</html>

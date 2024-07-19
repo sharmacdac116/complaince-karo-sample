@@ -1,0 +1,150 @@
+/* CSS Document */
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+.overlap {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.bold_3 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.button_class {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  width: 250px;
+  display: inline-block;
+}
+.bold_2 {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 900;
+  font-size: 100px;
+  left: 115px;
+  color: rgba(131, 128, 128, 0.50)
+}
+.change_background {
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  animation-name: change_background;
+}
+@keyframes change_background {
+  to {
+    color: white;
+  }
+}
+.para_code_1 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.para_code_2 {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.black-background-card {
+  background-color: black;
+  color: gray;
+  border-radius: 5%;
+  width: 80%;
+}
+.footer-ck {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1px;
+  color: #000000;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  width: 600px;
+  padding: 20px;
+  background: #E8E3E3;
+  filter: drop-shadow(-20px 25px 37.5px rgba(0, 0, 0, 0.25));
+}
+.form_header {
+  font-family: 'Outfit';
+  color: #069AF3;
+  font-weight: 500;
+}
+.form_mobil_no {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #069AF3;
+}
+.form_email_address {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #069AF3;
+}
+.form_watsapp {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+  background: rgba(37, 186, 69, 1.00);
+  border-radius: 50%;
+  color: #FFFFFF;
+}
+.form_labels {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  color: #000000;
+}
+.submit_button {
+  background: #000000;
+  /* Button Shadow */
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  color: white;
+}

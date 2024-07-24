@@ -111,7 +111,7 @@ function closeForm() {
 }
 
 window.addEventListener('click', function (e) {
-  if (!document.getElementById('join_us_id').contains(e.target) && !document.getElementById('contact-id').contains(e.target) && !document.getElementById("footer_contact_id").contains(e.target)) {
+  if (!document.getElementById('join_us_id').contains(e.target) && !document.getElementById('contact-id').contains(e.target) && !document.getElementById("footer_contact_id").contains(e.target) && !document.getElementById('get_in_touch').contains(e.target)) {
     closeForm();
   }
 });

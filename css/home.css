@@ -1,10 +1,12 @@
 /* CSS Document */
 h1.h1-bolder {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 119.06%;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: bolder;
+font-size: 60px;
+line-height: 119.06%;
+
+color: #000000;
 }
 h1.h1-light {
   font-family: 'Outfit';
@@ -17,6 +19,21 @@ h1.h1-bolder-size {
   font-size: 4.5rem;
   font-weight: bolder;
   font-family: 'Outfit';
+}
+.chart-btn{
+padding: 8px 8px;
+gap: 10px;
+
+width: 127.6px;
+height: 34px;
+
+background: #F6F7F9;
+border-right: 1px solid #D6D8DC;
+	color: black;
+
+}
+.chart-btn:hover{
+	color: white;
 }
 .animated-text-color {
   color: #069AF3;

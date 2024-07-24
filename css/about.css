@@ -85,21 +85,9 @@ p.para_5 {
   line-height: 110%;
   color: #000000;
 }
-div.para_3:hover {
-  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-}
-div.para_3:hover .para_3 {
-  color: #069AF3;
-}
 div.para_5:hover {
   box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
-div.para_5:hover .para_5 {
-  color: #069AF3;
-}
-div.para_2:hover {
-  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
-}
-div.para_2:hover .para_2 {
+div.para_5:hover .para_5_color {
   color: #069AF3;
 }

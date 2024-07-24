@@ -42,6 +42,9 @@ border-right: 1px solid #D6D8DC;
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
+.card:hover .card-color-change{
+	color: #069AF3;
+}
 .card {
   width: 19rem;
   height: 35rem;
